@@ -99,7 +99,7 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
 
     for c in cities:
         if c.lat < max(input_lat) and c.lat > min(input_lat) and c.lon < max(input_lon) and c.lon > min(input_lon):
-            print(c)
+            within.append(c)
     return within
 
 
